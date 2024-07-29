@@ -15,8 +15,26 @@
         header {
             background-color: #4CAF50;
             color: white;
-            text-align: center;
             padding: 1em 0;
+        }
+        .header-container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-container h1 {
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         .container {
             width: 80%;
@@ -59,7 +77,13 @@
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
+        <div class="header-container">
+            <h1>Contact Us</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
     </header>
     <div class="container">
         <h1>Get in Touch</h1>
