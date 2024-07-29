@@ -15,8 +15,26 @@
         header {
             background-color: #4CAF50;
             color: white;
-            text-align: center;
             padding: 1em 0;
+        }
+        .header-container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-container h1 {
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         .container {
             width: 80%;
@@ -41,10 +59,14 @@
 </head>
 <body>
     <header>
-        <h1>Meet Archie - My Cat</h1>
+        <div class="header-container">
+            <h1>Meet Archie - My Cat</h1>
+            <nav>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
     </header>
     <div class="container">
-<a href="contact.html">Contact Us</a>
         <h2>About Archie</h2>
         <img src="/archie24.jpeg" alt="Archie the Cat">
         <p>Archie is a playful and affectionate cat who loves to explore and nap in sunny spots. He has a charming personality and always knows how to make us smile. Archie enjoys playing with his favorite toys and curling up on the couch after a long day of adventures.</p>
